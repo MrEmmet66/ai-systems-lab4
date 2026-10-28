@@ -1,0 +1,10 @@
+section,model,vocab_size,embed_dim,n_heads,n_layers,context_len,dropout,batch_size,learning_rate,max_iters,eval_interval,eval_iters,best_val_loss,best_step,last_val_loss,parameters,seconds,evaluation_seconds,evaluations,checkpoint,first_checkpoint,setting,threshold,accuracy,inference_seconds,seconds_per_text,coverage,selective_accuracy
+mini_gpt,minigpt_v1,6000.0,128.0,4.0,2.0,64.0,0.1,64.0,0.0003,2000.0,250.0,50.0,5.658491830825806,2000.0,5.658491830825806,1946224,41.65894664899997,5.415446136999435,9.0,models/minigpt_v1.pt,models/minigpt_v1_first.pt,,,,,,,
+mini_gpt,minigpt_v2,6000.0,128.0,4.0,4.0,64.0,0.1,64.0,0.0003,2000.0,250.0,50.0,5.506845064163208,2000.0,5.506845064163208,2342000,68.59150532499962,8.547133240999301,9.0,models/minigpt_v2.pt,models/minigpt_v2_first.pt,,,,,,,
+mini_gpt,minigpt_v1_eval50,6000.0,128.0,4.0,2.0,64.0,0.1,64.0,0.0003,2000.0,50.0,50.0,5.658491830825806,2000.0,5.658491830825806,1946224,65.51810014500006,25.825678247997985,41.0,models/minigpt_v1_eval50.pt,models/minigpt_v1_eval50_first.pt,,,,,,,
+zero_shot,MoritzLaurer/mDeBERTa-v3-base-mnli-xnli,,,,,,,,,,,,,,,278811651,,,,,,базові налаштування,0.0,1.0,0.23350642199966387,0.011675321099983194,1.0,
+zero_shot,joeddav/xlm-roberta-large-xnli,,,,,,,,,,,,,,,559893507,,,,,,базові налаштування,0.0,1.0,0.5058271849993616,0.02529135924996808,1.0,
+zero_shot_settings,MoritzLaurer/mDeBERTa-v3-base-mnli-xnli,,,,,,,,,,,,,,,278811651,,,,,,поріг 0.0,0.0,1.0,,,1.0,1.0
+zero_shot_settings,MoritzLaurer/mDeBERTa-v3-base-mnli-xnli,,,,,,,,,,,,,,,278811651,,,,,,поріг 0.5,0.5,0.95,,,0.95,1.0
+zero_shot_settings,MoritzLaurer/mDeBERTa-v3-base-mnli-xnli,,,,,,,,,,,,,,,278811651,,,,,,поріг 0.7,0.7,0.8,,,0.8,1.0
+zero_shot_settings,MoritzLaurer/mDeBERTa-v3-base-mnli-xnli,,,,,,,,,,,,,,,278811651,,,,,,поріг 0.9,0.9,0.6,,,0.6,1.0
